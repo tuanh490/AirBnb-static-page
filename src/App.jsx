@@ -27,14 +27,14 @@ export default function App() {
             <section className="card-container">
                 {cards}
                 <Card
-                    key={el.id}
-                    openSpots={el.openSpots}
-                    img={"/" + el.coverImg}
-                    rating={el.stats.rating}
-                    reviewCount={el.stats.reviewCount}
-                    location={el.location}
-                    title={el.title}
-                    price={el.price}
+                    key={1}
+                    openSpots={0}
+                    img="/katie-zaferes.png"
+                    rating="5.0"
+                    reviewCount={2}
+                    location="Online"
+                    title="cool"
+                    price={12}
                 />
             </section>
         </>
