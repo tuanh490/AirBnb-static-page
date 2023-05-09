@@ -26,6 +26,16 @@ export default function App() {
             <Hero />
             <section className="card-container">
                 {cards}
+                <Card
+                    key={el.id}
+                    openSpots={el.openSpots}
+                    img={"/" + el.coverImg}
+                    rating={el.stats.rating}
+                    reviewCount={el.stats.reviewCount}
+                    location={el.location}
+                    title={el.title}
+                    price={el.price}
+                />
             </section>
         </>
     )
