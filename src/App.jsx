@@ -11,7 +11,7 @@ export default function App() {
             <Card
                 key={el.id}
                 openSpots={el.openSpots}
-                img={"/" + el.coverImg}
+                img={"/" + "AirBnb-static-page/" + el.coverImg}
                 rating={el.stats.rating}
                 reviewCount={el.stats.reviewCount}
                 location={el.location}
@@ -27,16 +27,6 @@ export default function App() {
             <Hero />
             <section className="card-container">
                 {cards}
-                <Card
-                    key={1}
-                    openSpots={0}
-                    img="/katie-zaferes.png"
-                    rating="5.0"
-                    reviewCount={2}
-                    location="Online"
-                    title="cool"
-                    price={12}
-                />
             </section>
         </>
     )
