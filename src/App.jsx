@@ -6,17 +6,11 @@ import Card from "./components/Card"
 import data from "./data"
 
 export default function App() {
-    const cards = data.map(el => {
+    const cards = data.map(item => {
         return (
             <Card
-                key={el.id}
-                openSpots={el.openSpots}
-                img={"/" + "AirBnb-static-page/" + el.coverImg}
-                rating={el.stats.rating}
-                reviewCount={el.stats.reviewCount}
-                location={el.location}
-                title={el.title}
-                price={el.price}
+                key={item.id}
+                {...item}
             />
         )
     })

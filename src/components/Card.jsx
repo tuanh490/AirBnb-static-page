@@ -12,18 +12,18 @@ export default function Card(props) {
         <section className="card">
             <div className="card-thumbnail">
                 {badgeText && <div className="card-status">{badgeText}</div>}
-                <img src={props.img} alt="" className="card-img" />
+                <img src={props.coverImg} alt="" className="card-img" />
             </div>
             <div className="card-info">
                 <p className="card-rating">
                     <img src={star} alt="" className="star" />
-                    <small>{props.rating} <span className="">({props.reviewCount}) &#x2022; {props.location}</span></small>
+                    <small>{props.rating} <span className="">({props.stats.reviewCount}) &#x2022; {props.location}</span></small>
                 </p>
                 <p className="card-title">
                     {props.title}
                 </p>
                 <p className="card-price">
-                    <b>From ${props.price}</b> / person
+                    <b>From ${props.stats.price}</b> / person
                 </p>
             </div>
         </section>
